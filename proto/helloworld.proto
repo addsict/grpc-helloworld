@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package proto;
+
+service HelloService {
+  rpc Greet(RequestType) returns (ResponseType) {};
+}
+
+message ResponseType {
+  string msg = 1;
+}
+
+message RequestType {
+  string name = 1;
+}
